@@ -57,7 +57,7 @@ a {
 /* container */
 .container {
   width: 100%;
-  max-width: 950px;
+  max-width: 1000px;
   margin: 0 auto 0 27%;
   padding: 0 50px;
 }
@@ -258,6 +258,9 @@ a {
 /* section */
 .section {
   padding: 45px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 /* selection */
@@ -276,6 +279,91 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.selection-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.selection-info-text p {
+  font-size: 18px;
+  line-height: 23px;
+  width: 426px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.selection-list {
+  list-style-type: none;
+  list-style-image: url(../img/square.png);
+  list-style-position: inside;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.selection-point {
+  font-size: 18px;
+  line-height: 35px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.selection-info-doing {
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.selection-info-doing p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.selection-info-doing-poins {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.selection-info-doing-poins p {
+  border: solid #EB773E 2px;
+  padding: 12px;
+}
+
+hr {
+  margin-top: 6%;
+  border: none;
+  width: 15px;
+  height: 1px;
+  background-color: #EB773E;
+  color: #EB773E;
+}
+
+.selection-btn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px; 
+  margin-bottom: 15px;
+}
+
+.selection-btn .btn {
+  position: relative;
+  left: 35px;
+  top: 5px;
+}
+
+.selection-btn-info {
+  border-left: solid;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 115px;
+  padding-left: 25px;
 }
 
 
