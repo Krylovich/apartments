@@ -224,20 +224,21 @@ a {
 .intro-info{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   width: 620px;
-  height: 360px;
+  height: 100vh;
   left: 45px;
+  top: 0;
 }
 
 .intro-title {
-  position: absolute;
+  position: relative;
   font-size: 48px;
   line-height: 60px;
   padding-left: 35px;
   border-left: solid 3px;
-  top: 50%;
+  margin-bottom: 70px;
 }
 
 /* BTN */
@@ -250,9 +251,8 @@ a {
   font-size: 18px;
   line-height: 23px;
   padding-top: 19px;
-  position: absolute;
+  position: relative;
   left: 40px;
-  top: 140%;
 }
 
 /* section */
@@ -264,11 +264,13 @@ a {
 }
 
 /* selection */
-.selection {
+.selection,
+.benefits {
   height: 100vh;
 }
 
-.selection-title {
+.selection-title,
+.benefits-title {
   font-size: 30px;
   line-height: 38px;
   padding-left: 35px;
@@ -364,6 +366,55 @@ hr {
   line-height: 22px;
   margin-left: 115px;
   padding-left: 25px;
+}
+
+/* benefits */
+.benefits {
+  background: url(../img/background-color.png);
+  background-size: cover;
+}
+
+.benefits-table {
+  position: relative;
+  margin-left: 35px;
+}
+
+.benefits-text {
+  font-size: 18px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.benefits-list-item {
+  width: 33%;
+  margin: 25px 0;
+}
+
+.benefits-list-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.benefits-list-title {
+  width: 200px;
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #EB773E;
+}
+
+.benefits-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 15px;
 }
 
 
