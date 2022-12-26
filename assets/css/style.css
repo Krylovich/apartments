@@ -270,7 +270,8 @@ a {
 }
 
 .selection-title,
-.benefits-title {
+.benefits-title,
+.flats-title {
   font-size: 30px;
   line-height: 38px;
   padding-left: 35px;
@@ -369,7 +370,8 @@ hr {
 }
 
 /* benefits */
-.benefits {
+.benefits,
+.reviews {
   background: url(../img/background-color.png);
   background-size: cover;
 }
@@ -392,7 +394,7 @@ hr {
 
 .benefits-list-item {
   width: 33%;
-  margin: 25px 0;
+  margin: 25px 0 15px;
 }
 
 .benefits-list-icon {
@@ -417,6 +419,33 @@ hr {
   margin-top: 15px;
 }
 
+/* Flats */
+.flats-text {
+  font-size: 18px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+}
+
+.flats-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.flats-list-col {
+  margin-right: 150px;
+}
+
+.flats-list-item {
+  list-style-type: none;
+  list-style-image: url(../img/square-bigger.png);
+  list-style-position: inside;
+  font-size: 20px;
+  line-height: 35px;
+}
 
 
 
