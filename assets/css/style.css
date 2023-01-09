@@ -184,6 +184,10 @@ a {
   font-style: normal;
 }
 
+.page-right {
+  position: relative;
+}
+
 /* main */
 .main {
   position: relative;
@@ -212,7 +216,7 @@ a {
 
 .intro-descriptor {
   position: relative;
-  top: 20px;
+  margin-top: 20px;
   left: 35px;
   padding: 5px;
   font-size: 16px;
@@ -226,7 +230,7 @@ a {
   justify-content: center;
   position: relative;
   width: 620px;
-  height: 100vh;
+  height: calc(100vh - 80px);;
   left: 0px;
   top: 0;
 }
@@ -708,30 +712,35 @@ article {
 /* Footer */
 .footer {
   height: 250px;
-  margin-top: 0;
+  display: flex;
+  align-items: center;
   background-image: url(../img/background-color.png);
 }
 
 .footer-inner {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-inner-info {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1000px;
+  align-items: center;
+  margin-left: 35px;
 }
 
 .footer-copy {
   font-size: 16px;
   line-height: 20px;
-  margin-top: 75px;
-  margin-left: 35px;
 }
 
 .footer-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 45px;
 }
 
 .footer-info-text {
@@ -775,7 +784,7 @@ article {
 @media(max-width: 1380px) {
  /* container */
  .container {
-  padding: 0 30px;
+  padding: 0 40px;
   max-width: 900px;
   margin-left: 29%;
  }
@@ -786,7 +795,7 @@ article {
 
  /* header */
  .header {
-  width: 25%;
+  width: 29%;
  }
 
  .square-nav {
@@ -826,6 +835,10 @@ article {
   font-size: 14px;
   line-height: 21px;
   left: 25px;
+ }
+
+ .intro-info {
+  height: calc(100vh - 72px);
  }
 
  /* btn */
@@ -1090,7 +1103,6 @@ article {
   .footer-copy {
     font-size: 14px;
     line-height: 18px;
-    margin-left: 25px;
     margin-top: 0px;
   }
 
@@ -1098,8 +1110,9 @@ article {
     margin-top: 0px;
   }
 
-  .footer-inner {
+  .footer-inner-info {
     max-width: 619px;
+    margin-left: 25px;
   }
 
   .footer-author {
