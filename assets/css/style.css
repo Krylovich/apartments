@@ -91,6 +91,14 @@ a {
   background-color: #0F466D;
 }
 
+#navTog {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
 .header-inner {
   display: flex;
   flex-direction: column;
@@ -184,6 +192,11 @@ a {
   font-style: normal;
 }
 
+.dark {
+  opacity: 0;
+  display: none;
+}
+
 .page-right {
   position: relative;
 }
@@ -214,6 +227,10 @@ a {
   object-fit: cover;
 }
 
+.intro-img-mob {
+  display: none;
+}
+
 .intro-descriptor {
   position: relative;
   margin-top: 20px;
@@ -233,6 +250,10 @@ a {
   height: calc(100vh - 80px);;
   left: 0px;
   top: 0;
+}
+
+.intro-logo {
+  display: none;
 }
 
 .intro-title {
@@ -477,6 +498,10 @@ hr {
   animation-duration: .5s;
 }
 
+.reviews-slide-item-mob {
+  display: none;
+}
+
 .rev {
   position: relative;
   width: 380px;
@@ -630,6 +655,10 @@ article {
 	background: #eb783e; 
   opacity: 50%;
   transition: opacity linear .2s;
+}
+
+.dot-mob {
+  display: none;
 }
 
 .dot-active {
@@ -1131,7 +1160,7 @@ article {
 @media(max-width: 1025px) {
   /* header */
   .header {
-    width: 28%;
+    width: 29%;
   }
 
   .container-header {
@@ -1176,7 +1205,7 @@ article {
   .container {
     padding: 0 15px;
     max-width: 553px;
-    margin-left: 28%;
+    margin-left: 30%;
   }
 
   /* Intro */
@@ -1463,5 +1492,349 @@ article {
     font-size: 11px;
   }
 
+  .footer-info-text a {
+    font-size: 14px;
+  }
+
+  .footer-author {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 825px) {
+  .header {
+    width: 28%;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
+  .container {
+    margin-left: 28%;
+  }
+}
+
+@media (max-width: 769px) {
+  /*container */
+  .container {
+    margin: 0 auto 0 35px;
+    padding: 0 10px;
+    max-width: 700px;
+  }
+
+  /* header */
+  .header {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1000;
+    left: initial;
+    width: 310px;
+    right: 0;
+  }
+
+  .container-header {
+    padding-right: 75px;
+  }
+
+  .header-inner {
+    left: initial;
+    border-left: none;
+    align-items: flex-end;
+    border-right: solid 1px #fff;
+  }
+
+  .show {
+    transform: translateX(0);
+  }
+
+  .logo {
+    left: 53px;
+    top: 15px;
+  }
+
+  .navside {
+    align-items: flex-end;
+    left: 0;
+    padding-right: 18px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    margin: 15px 0;
+  }
+
+  .square-nav {
+    left: initial;
+    width: 18px;
+    height: 18px;
+    right: -9px;
+  }
+
+  .header-address {
+    padding-right: 18px;
+    left: 0;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+  .header-tel {
+    font-size: 16px;
+  }
+
+  .header-address-info {
+    font-size: 10px;
+  }
+
+  /* burger */
+  label {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: -30px auto 0 auto;
+    cursor: pointer;
+    background-color:#eb783e;
+    padding: 3px 5px;
+    transition: left 0.5s ease-in;
+  }
+
+  .open {
+    left: -20px;
+  }
+  
+  label div {
+    position: relative;
+    top: 0;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+      0.3s ease right;
+  }
+
+  label div:first-child {
+    transform-origin: 0;
+  }
+
+  label div:last-child {
+    margin-bottom: 0;
+    transform-origin: 24px;
+  }
+
+  label div:nth-child(2) {
+    right: 0;
+    width: 26px;
+  }
+
+  #navTog:checked + label div:first-child {
+    top: -4px;
+    transform: rotateZ(45deg);
+  }
+  
+  #navTog:checked + label div:last-child {
+    top: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+  #navTog:checked + label div:nth-child(2) {
+    width: 35px;
+    top: 1px;
+    right: 5px;
+    transform: rotateZ(-45deg);
+  }
+
+  /* section */
+  .section {
+    padding: 20px 0;
+    height: 100%;
+  }
+
+  /* container */
+  .container {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 20px;
+  }
+
+  .container-inner {
+    padding: 20px 0;
+  }
+
+  /* intro */
+  .intro-img {
+    display: none;
+  }
+
+  .intro-logo {
+    position: absolute;
+    right: 25px;
+    padding: 5px;
+    top: 15px;
+    width: 45px;
+    height: 45px;
+    display: block;
+  }
+
+  .intro-logo img{
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-img-mob {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .intro-descriptor {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .intro-info {
+    width: 317px;
+  }
+
+  .intro-title {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 15px;
+  }
+
+  /* btn */
+  .btn {
+    width: 200px;
+  }
+
+  /* selection */
+  .selection, 
+  .benefits {
+    height: auto;
+  }
+
+  .selection-title, 
+  .benefits-title, 
+  .flats-title, 
+  .reviews-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .selection-info {
+    flex-direction: column;
+  }
+
+  .selection-img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .selection-info-text {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .selection-info-text p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .selection-point {
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .selection-info-doing-poins {
+    font-size: 14px;
+    line-height: 17px;
+    width: 350px;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .selection-info-doing-poins p {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px 72px;
+    margin-bottom: 0px;
+  }
+
+  .selection-info-doing-poins br {
+    display: none;
+  }
+
+  hr {
+    height: 15px;
+    margin: 0 auto;
+    width: 2px;
+  }
+
+  .selection-btn-info {
+    margin-left: 40px;
+  }
+  
+  /* benefits */
+  .benefits-text {
+    font-size: 14px;
+  }
+
+  .benefits-list-item {
+    width: 50%;
+    padding: 10px 10px 10px 0;
+  }
+
+  .benefits-list-title {
+    font-size: 14px;
+    line-height: 18px;
+    width: 158px;
+  }
+
+  .benefits-list-title br {
+    display: none;
+  }
+
+  .benefits-list-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* flats */
+  .flats-text {
+    font-size: 14px;
+  }
+
+  /* reviews */
+  .reviews-slide-item {
+    display: none;
+  }
+
+  .reviews-slide-item-mob {
+    display: block;
+  }
+
+  .rev {
+    width: 270px;
+  }
+
+  .rev-square {
+    left: 122px;
+  }
+
+  .dot-mob {
+    display: block;
+  }
+
+  
 }
 
