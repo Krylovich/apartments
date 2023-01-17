@@ -1657,7 +1657,7 @@ article {
   .container {
     margin: 0 auto;
     max-width: 750px;
-    padding: 0 20px;
+    padding: 0 75px;
   }
 
   .container-inner {
@@ -1671,7 +1671,7 @@ article {
 
   .intro-logo {
     position: absolute;
-    right: 25px;
+    right: 75px;
     padding: 5px;
     top: 15px;
     width: 45px;
@@ -1766,7 +1766,7 @@ article {
   .selection-info-doing-poins p {
     font-size: 14px;
     line-height: 18px;
-    padding: 15px 72px;
+    padding: 15px 76px;
     margin-bottom: 0px;
   }
 
@@ -1787,6 +1787,11 @@ article {
   /* benefits */
   .benefits-text {
     font-size: 14px;
+  }
+
+  .benefits-list {
+    width: 100%;
+    max-width: 580px;
   }
 
   .benefits-list-item {
@@ -1814,6 +1819,64 @@ article {
     font-size: 14px;
   }
 
+  /* contacts */
+  .contacts-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contacts-text{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+
+  .contacts-img {
+    display: none;
+  }
+
+  .contacts-address {
+    margin-bottom: 25px;
+  }
+
+  .contacts-icons {
+    margin-bottom: 25px;
+  }
+
+  /* footer */
+  .footer-copy {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .footer-info {
+    align-items: flex-end;
+  }
+
+  .footer-info-text {
+    font-size: 10px;
+    line-height: 12px;
+    width: 135px;
+  }
+
+  .footer-info-text a {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer-author {
+    margin-top: 25px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* selection */
+  .selection-btn-info {
+    font-size: 10px;
+  }
+  
   /* reviews */
   .reviews-slide-item {
     display: none;
@@ -1835,6 +1898,8 @@ article {
     display: block;
   }
 
-  
+  .reviews-controls {
+    max-width: 270px;
+  }
 }
 
