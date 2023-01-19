@@ -1625,7 +1625,7 @@ article {
     cursor: pointer;
     background-color:#eb783e;
     padding: 3px 5px;
-    transition: margin-left 0.7s ease-in;
+    transition: margin-left 0.6s ease-in;
   }
 
   .open {
