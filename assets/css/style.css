@@ -1903,3 +1903,56 @@ article {
   }
 }
 
+@media (max-width: 610px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* intro */
+  .intro-logo {
+    right: 25px;
+  }
+
+  /* selection */
+  .selection-btn {
+    flex-direction: column;
+  }
+
+  .selection-btn-info {
+    margin-left: 15px;
+    margin-top: 20px;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 476px) {
+  /* container */
+  .container {
+    padding: 0 10px;
+  }
+
+  /* section */
+  .section {
+    padding: 15px 0;
+  }
+
+  /* intro */
+  .intro-descriptor {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 5px;
+    width: 197px;
+  }
+
+  .intro-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .btn {
+    width: 170px;
+    top: 100px;
+  }
+}
+
