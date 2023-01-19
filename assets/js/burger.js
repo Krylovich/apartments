@@ -1,7 +1,7 @@
 let navTog = document.querySelector('#navTog');
 let nav = document.querySelector('#header');
 let burger = document.querySelector('#burger');
-let logo = document.querySelector('#logo')
+let logo = document.querySelector('#logo');
 
 
     const toggleBurger = () => {
