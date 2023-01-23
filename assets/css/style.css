@@ -1952,6 +1952,11 @@ article {
     padding: 15px 0;
   }
 
+  /* header */
+  .header-address {
+    margin-bottom: 40px;
+  }
+
   /* intro */
   .intro-descriptor {
     font-size: 11px;
@@ -1972,7 +1977,7 @@ article {
   /* BTN */
   .btn {
     width: 170px;
-    top: 100px;
+    top: calc(100vh - 90vh);
   }
 
   /* titles */
@@ -2001,7 +2006,7 @@ article {
   }
 
   .selection-info-text p {
-    width: 257px;
+    width: 300px;
   }
 
   .selection-info-text p br {
@@ -2075,6 +2080,10 @@ article {
   .footer-author {
     font-size: 8px;
     line-height: 10px;
+  }
+
+  .footer-info {
+    margin-right: 7px;
   }
 
   .footer-info-text {
