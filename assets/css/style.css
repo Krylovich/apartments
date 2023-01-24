@@ -1969,7 +1969,7 @@ article {
 
   /* header */
   .header-address {
-    margin-bottom: 40px;
+    bottom: 50px;
   }
 
   /* intro */
@@ -1981,7 +1981,7 @@ article {
   }
 
   .intro-info {
-    width: 280px;
+    width: 300px;
   }
 
   .intro-title {
@@ -2112,6 +2112,12 @@ article {
 
   .footer-author {
     margin-top: 70px;
+  }
+}
+
+@media (max-height: 440px) {
+  .navside li {
+    margin: 10px 0;
   }
 }
 
