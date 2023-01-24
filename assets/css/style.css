@@ -144,11 +144,14 @@ label {
   justify-content: space-between;
 }
 
+.navside li {
+  margin: 20px 0;
+}
+
 .nav-link {
   text-decoration: none;
   color: #ffffffd8;
   font-size: 14px;
-  margin: 20px 0;
   padding-left: 5px;
 }
 
@@ -160,7 +163,7 @@ label {
 	background: #EB773E;
   overflow-y: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.01s;
 }
 
 .nav-link:hover {
@@ -173,7 +176,6 @@ label {
 
 .active .square-nav {
   opacity: 1;
-  transform: 0;
 }
 
 .header-address {
@@ -863,8 +865,11 @@ article {
     height: 50px;
  }
 
- .nav-link {
+ .navside li {
     margin: 15px 0;
+ }
+
+ .nav-link {
     font-size: 13px;
  }
 
@@ -1205,8 +1210,11 @@ article {
     left: -30px;
   }
 
-  .nav-link {
+  .navside li {
     margin: 10px 0;
+  }
+
+  .nav-link {
     font-size: 11px;
     line-height: 22px;
     padding-left: 0;
@@ -1583,9 +1591,12 @@ article {
     padding-right: 18px;
   }
 
+  .navside li {
+    margin: 15px 0;
+  }
+
   .nav-link {
     font-size: 12px;
-    margin: 15px 0;
   }
 
   .square-nav {
@@ -1593,6 +1604,10 @@ article {
     width: 18px;
     height: 18px;
     right: -9px;
+  }
+
+  .active .square-nav {
+    margin-top: 5px;
   }
 
   .header-address {
